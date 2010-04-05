@@ -20,6 +20,7 @@ module Shoulda # :nodoc:
       end
 
       class AssignToMatcher # :nodoc:
+        include ActionDispatch::TestProcess
 
         def initialize(variable)
           @variable = variable.to_s
@@ -96,10 +97,6 @@ module Shoulda # :nodoc:
 
         def assigned_value
           assigns[@variable]
-        end
-
-        def assigns
-          @controller.response.template.assigns 
         end
 
       end
