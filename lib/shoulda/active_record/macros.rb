@@ -27,7 +27,7 @@ module Shoulda # :nodoc:
       #
       # Options:
       # * <tt>:message</tt> - value the test expects to find in <tt>errors.on(:attribute)</tt>.
-      #   Regexp or string.  Default = <tt>I18n.translate('activerecord.errors.messages.blank')</tt>
+      #   Regexp or string.  Default = <tt>I18n.translate('errors.messages.blank')</tt>
       #
       # Example:
       #   should_validate_presence_of :name, :phone_number
@@ -49,7 +49,7 @@ module Shoulda # :nodoc:
       # Options:
 
       # * <tt>:message</tt> - value the test expects to find in <tt>errors.on(:attribute)</tt>.
-      #   Regexp or string.  Default = <tt>I18n.translate('activerecord.errors.messages.taken')</tt>
+      #   Regexp or string.  Default = <tt>I18n.translate('errors.messages.taken')</tt>
       # * <tt>:scoped_to</tt> - field(s) to scope the uniqueness to.
       # * <tt>:case_sensitive</tt> - whether or not uniqueness is defined by an
       #   exact match. Ignored by non-text attributes. Default = <tt>true</tt>
@@ -160,9 +160,9 @@ module Shoulda # :nodoc:
       #
       # Options:
       # * <tt>:short_message</tt> - value the test expects to find in <tt>errors.on(:attribute)</tt>.
-      #   Regexp or string.  Default = <tt>I18n.translate('activerecord.errors.messages.too_short') % range.first</tt>
+      #   Regexp or string.  Default = <tt>I18n.translate('errors.messages.too_short') % range.first</tt>
       # * <tt>:long_message</tt> - value the test expects to find in <tt>errors.on(:attribute)</tt>.
-      #   Regexp or string.  Default = <tt>I18n.translate('activerecord.errors.messages.too_long') % range.last</tt>
+      #   Regexp or string.  Default = <tt>I18n.translate('errors.messages.too_long') % range.last</tt>
       #
       # Example:
       #   should_ensure_length_in_range :password, (6..20)
@@ -186,7 +186,7 @@ module Shoulda # :nodoc:
       #
       # Options:
       # * <tt>:short_message</tt> - value the test expects to find in <tt>errors.on(:attribute)</tt>.
-      #   Regexp or string.  Default = <tt>I18n.translate('activerecord.errors.messages.too_short') % min_length</tt>
+      #   Regexp or string.  Default = <tt>I18n.translate('errors.messages.too_short') % min_length</tt>
       #
       # Example:
       #   should_ensure_length_at_least :name, 3
@@ -207,7 +207,7 @@ module Shoulda # :nodoc:
       #
       # Options:
       # * <tt>:message</tt> - value the test expects to find in <tt>errors.on(:attribute)</tt>.
-      #   Regexp or string.  Default = <tt>I18n.translate('activerecord.errors.messages.wrong_length') % length</tt>
+      #   Regexp or string.  Default = <tt>I18n.translate('errors.messages.wrong_length') % length</tt>
       #
       # Example:
       #   should_ensure_length_is :ssn, 9
@@ -227,9 +227,9 @@ module Shoulda # :nodoc:
       #
       # Options:
       # * <tt>:low_message</tt> - value the test expects to find in <tt>errors.on(:attribute)</tt>.
-      #   Regexp or string.  Default = <tt>I18n.translate('activerecord.errors.messages.inclusion')</tt>
+      #   Regexp or string.  Default = <tt>I18n.translate('errors.messages.inclusion')</tt>
       # * <tt>:high_message</tt> - value the test expects to find in <tt>errors.on(:attribute)</tt>.
-      #   Regexp or string.  Default = <tt>I18n.translate('activerecord.errors.messages.inclusion')</tt>
+      #   Regexp or string.  Default = <tt>I18n.translate('errors.messages.inclusion')</tt>
       #
       # Example:
       #   should_ensure_value_in_range :age, (0..100)
@@ -253,7 +253,7 @@ module Shoulda # :nodoc:
       #
       # Options:
       # * <tt>:message</tt> - value the test expects to find in <tt>errors.on(:attribute)</tt>.
-      #   Regexp or string.  Default = <tt>I18n.translate('activerecord.errors.messages.not_a_number')</tt>
+      #   Regexp or string.  Default = <tt>I18n.translate('errors.messages.not_a_number')</tt>
       #
       # Example:
       #   should_validate_numericality_of :age
@@ -448,7 +448,7 @@ module Shoulda # :nodoc:
       #
       # Options:
       # * <tt>:message</tt> - value the test expects to find in <tt>errors.on(:attribute)</tt>.
-      #   Regexp or string.  Default = <tt>I18n.translate('activerecord.errors.messages.accepted')</tt>
+      #   Regexp or string.  Default = <tt>I18n.translate('errors.messages.accepted')</tt>
       #
       # Example:
       #   should_validate_acceptance_of :eula
